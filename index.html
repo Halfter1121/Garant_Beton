@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
+  <title>Гарант Бетон</title>
+  <link rel="stylesheet" href="css/main.css" />
+
+  <link rel="icon" href="img/header-logo-red.png">
+</head>
+
+<body>
+ 
+  <div class="site-container">
+    <header class="header header--main">
+      <div class="container header__container">
+        <a href="#" class="logo">
+          <img src="img/header-logo-red.png" alt="Garant logo" /> </a>
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="news/news.html" id="menu" class="nav__link">Новости</a>
+            </li>
+
+
+            <li class="nav__item">
+              <a href="#price" class="nav__link">Цены</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="work/work.html" class="nav__link">Работа</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header-contacts">
+          <a href="tel:8(800)500 68 26" class="header-contacts__link contacts-link contacts-link--call">
+            <span class="contacts-link__caption">Звоните</span>
+            <span class="contacts-link__value">8 (800) 500 68 26</span>
+          </a>
+          <a href="mailto:manager@garant-beton.ru" class="header-contacts__link contacts-link contacts-link--mail">
+            <span class="contacts-link__caption">Пишите</span>
+            <span class="contacts-link__value">manager@garant-beton.ru</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="main-title main-title--home">Гарант<span>-</span>Бетон</h1>
+          <p class="main-descr main-descr--home">Мы реализуем бетонные смеси и бетон, а также карьерный и мытый песок,
+            гравийный и гранитный щебень, другие товары для выполнения строительных работ.
+            Вы с легкостью подберете нужную продукцию благодаря удобному каталогу.
+          </p>
+          <div class="hero__btns">
+            <button class="btn-reset btn btn--stroke btn--stroke-white"> <a href="#about"> О нас </a>
+            </button>
+           
+           
+           
+           
+           
+            <button class="btn-reset btn btn--fill" id="myBtn"> Отправить запрос </button>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <div id="myModal" class="modal">
+
+      <!-- Модальное содержание -->
+      <div class="modal-content">
+
+
+          <div class="modal-header">
+              <span class="close">&times;</span>
+              ЗАКАЗ <br />НА ПОСТАВКУ БЕТОНА
+          </div>
+
+
+          <div class="modal-body">
+
+              <div class="modal-row">
+                  <div class="modal-row-input-block">
+                      <div class="modal-input-name">МАРКА</div>
+                      <select>
+                          <option value="">не указано</option>
+                          <option value="М100 В7,5">М100 В7,5</option>
+                          <option value="М150 В12,5">М150 В12,5</option>
+                          <option value="М200 В15">М200 В15</option>
+                          <option value="М250 В20">М250 В20</option>
+                          <option value="М300 В22,5">М300 В22,5</option>
+                          <option value="М350 В25">М350 В25</option>
+                          <option value="М400 В30">М400 В30</option>
+                          <option value="М450 В35">М450 В35</option>
+                          <option value="М550 В40">М550 В40</option>
+                          <option value="Цементное молоко">Цементное молоко</option>
+                      </select>
+                  </div>
+
+                  <div class="modal-row-input-block">
+                      <div class="modal-input-name">НАПОЛНИТЕЛЬ</div>
+
+                      <select>
+                          <option value="">не указано</option>
+                          <option value="гравий">гравий</option>
+                          <option value="гранит">гранит</option>
+                          <option value="молоко">цем. молоко</option>
+
+                      </select>
+                  </div>
+                  <div class="modal-row-input-block">
+                      <div class="modal-input-name">КОЛИЧЕСТВО М<sup>3</sup></div>
+                      <input type="text" placeholder="Объем">
+                  </div>
+              </div>
+
+
+              <div class="modal-row ">
+                  <div class="modal-row-input-block one_item">
+                      <div class="modal-input-name">АДРЕС</div>
+                      <input type="text" placeholder="Адрес">
+                  </div>
+              </div>
+
+
+              <div class="modal-row">
+                  <div class="modal-row-input-block">
+                      <div class="modal-input-name">БЕТОНОНАСОС</div>
+                      <select>
+                          <option value="не нужен">не нужен</option>
+                          <option value="нужен">нужен</option>
+                      </select>
+                  </div>
+
+                  <div class="modal-row-input-block">
+                      <div class="modal-input-name">ДЛИНА СТРЕЛЫ</div>
+                      <select id="bigbet_dlins" name="bigbet_dlins">
+                          <option value="не указано">не указано</option>
+                          <option value="15 м">15 м</option>
+                          <option value="16 м">16 м</option>
+                          <option value="22 м">22 м</option>
+                          <option value="24 м">24 м</option>
+                          <option value="28 м">28 м</option>
+                          <option value="32 м">32 м</option>
+                          <option value="36 м">36 м</option>
+                          <option value="40 м">40 м</option>
+                          <option value="42 м">42 м</option>
+                          <option value="48 м">48 м</option>
+                          <option value="52 м">52 м</option>
+                          <option value="56 м">56 м</option>
+                          <option value="58 м">58 м</option>
+                          <option value="62 м">62 м</option>
+                      </select>
+                  </div>
+
+                  <div class="modal-row-input-block">
+                      <div class="modal-input-name">ДОПОЛНИТЕЛЬНАЯ ТРАССА, М</div>
+                      <span class="s7-form__input">
+                          <input class="input" type="text" id="bigbet_dopt" name="bigbet_dopt" placeholder="Длина">
+                      </span>
+                  </div>
+              </div>
+              <div class="modal-row two_item">
+
+                  <div class="modal-row-input-block two_item">
+                      <div class="modal-input-name">ФИО ЗАКАЗЧИКА</div>
+                      <input class="input " type="text" id="bigbet_name" name="name" placeholder="ФИО заказчика">
+                  </div>
+                  <div class="modal-row-input-block">
+                      <div class="modal-input-name">ТЕЛЕФОН (ВКЛЮЧАЯ КОД И НОМЕР)</div>
+                      <input class="input tel" id="bigbet_number" type="tel" name="number"
+                          placeholder="+7 (___) ___ __ __" maxlength="18">
+                  </div>
+              </div>
+              <div class="modal-row two_item">
+                  <div class="modal-row-input-block two_item">
+                      <div class="modal-input-name">КОММЕНТАРИЙ</div>
+                      <input class="input " type="text" id="bigbet_name" name="name"
+                          placeholder="Комментарий к заказу">
+                  </div>
+                  <div class="modal-row-input-block">
+                      <div class="modal-input-name">&nbsp;</div><button>РАССЧИТАТЬ</button>
+                  </div>
+
+              </div>
+          </div>
+
+
+
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="about-sections section-offset">
+      <div class="container">
+        <h2 id="about" class="title title--center">Мы "ООО Гарант-Бетон"</h2>
+        <p class="descr descr--center">Мы&nbsp;по праву&nbsp;считаемся&nbsp; лучшей компанией по продаже бетона
+          в&nbsp;Подмосковье.</p>
+        <div class="index-screen-ten">
+          <div class="container">
+            <div class="box">
+              <div class="img_wrap"><img class="about_img" src="img/index-screen-ten-img.jpg" alt=""></div>
+              <div class="content_wrap">
+                <div class="top_content">
+                  <h1>Бетон в Истре с доставкой</h1>
+                  <p>Мы реализуем бетонные смеси и бетон, а также карьерный и мытый песок, гравийный и гранитный щебень,
+                    другие товары для выполнения строительных работ.</p>
+                </div>
+                <div class="border_block">
+                  <p>Вы с легкостью подберете нужную продукцию благодаря удобному каталогу.</p>
+                  <p>Завод "Гарант-Бетон" является круглогодичным и обеспечен всем необходимым для быстрого и
+                    качественного
+                    производства бетона любого класса и марки. Собственный лабораторный комплекс гарантирует оптимальные
+                    эксплуатационные характеристики продукции.</p>
+                  <p>Реализуемые строительные смеси, а также щебень и песок обязательно проходят проверку на
+                    соответствие
+                    ГОСТам и нормативным документам перед продажей. Благодаря этому вы можете быть уверены в их
+                    качестве.
+                    Все товары сопровождаются обязательным паспортом качества.</p>
+                  <p>Стоимость бетона не завышается нами. Это обусловлено наличием собственного производства и
+                    отсутствием
+                    посредников. Мы всегда придерживаемся лояльной ценовой политики и в отношении других товаров.</p>
+                </div>
+              </div>
+            </div>
+            <div class="video-block">
+              <button class="btn-reset video-block__play" aria-label="Play video">
+                <img src="img/sprite/play.svg" alt="">
+              </button>
+              <button class="btn-reset video-block__muted" aria-label="Mute video">
+                <img src="img/sprite/mute.svg" alt="">
+              </button>
+              <video class="video-block__content" src="img/resources/background-video.mp4" muted loop
+                preload="metadata"></video>
+            </div>
+          </div>
+    </section>
+
+
+    <!-- /.box -->
+
+  </div>
+  <!-- /.container -->
+  </div>
+  <section class="mission section-offset">
+    <div class="container">
+      <h2 class="title title--center">Наши основные ценности</h2>
+      <p class="descr descr--center">Вы с легкостью&nbsp;подберете&nbsp;нужную продукцию благодаря удобному каталогу.
+      </p>
+      <ul class=" list-reset mission__list">
+        <li class="mission__item mission__item--quality">
+          <h3 class="mission__subtitle">Качество</h3>
+          <p class="mission__descr">
+            Мы&nbsp; несем ответственность&nbsp; за &nbsp;качество продукции.</p>
+        </li>
+        <li class="mission__item mission__item--safety">
+          <h3 class="mission__subtitle">Доставка</h3>
+          <p class="mission__descr">Своевременно&nbsp; и быстро доставим&nbsp; бетон к вам&nbsp; на объект.</p>
+        </li>
+        <li class="mission__item mission__item--comfort">
+          <h3 class="mission__subtitle">Технологии</h3>
+          <p class="mission__descr">Внедряем новейшие разработки, с применением современного&nbsp;оборудования.</p>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Акции -->
+  <section class="services__section section-offset">
+    <div class="container">
+      <div class="title_ovh">
+        <div id="price" class="title_block"><span class="title">Акционные цены на бетон</span> <span
+            class="descr">Выберите
+            категорию продукции:</span></div>
+      </div>
+      <ul class="nav">
+        <li><a id='1' class="nav_section active" data-toggle="tab">Бетон</a></li>
+        <li style="margin: 0 2px;"><a id="2" class="nav_section" data-toggle="tab">Раствор</a></li>
+        <li><a id='3' class="nav_section" data-toggle="tab">Доставка </a></li>
+        <!--<li><a data-toggle="tab" href="#tab-3" role="tab">Керамзитобетон</a></li>
+						<li><a data-toggle="tab" href="#tab-4" role="tab">ПМД (t<sup>0</sup> C)</a></li>-->
+      </ul>
+      <div class="tab-content">
+        <div id="tab-1" class="tab-pane active">
+          <div class="table-wrap">
+            <div class="table-box style-4 style-3 style-alfa" style="width: 100%;">
+              <div class="scroll-wrapper scrollbar-inner" style="position: relative;">
+                <div class="scrollbar-inner scroll-content"
+                  style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 749.5px;">
+                  <h3>БЕТОН</h3>
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <th valign="top" width="175">
+                          <p align="center">Наименование класса<br> бетона:</p>
+                        </th>
+                        <th valign="top" nowrap="nowrap" width="79">
+                          <p align="center">Марка</p>
+                        </th>
+                        <th valign="top" width="156">
+                          <p align="center">Бетон&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (гравийный щебень)</p>
+                        </th>
+                        <th valign="top" width="156">
+                          <p align="center">Бетон&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; (гранитный щебень)</p>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В7,5 П3&nbsp;F50&nbsp;W2</p>
+                        </td>
+                        <td rowspan="2" nowrap="nowrap" width="79">
+                          <p align="center">М-100</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center"><span>4 760</span></p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center"><span>5 960</span></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В7,5 П4&nbsp;F50 W2</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center"><span>4 810</span></p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 010</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В12,5 П3&nbsp;F75&nbsp;W4</p>
+                        </td>
+                        <td rowspan="2" nowrap="nowrap" width="79">
+                          <p align="center">М-150</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 870</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 070</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В12,5 П4&nbsp;F75&nbsp;W4</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 920</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 120</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В15 &nbsp;П3&nbsp;F75&nbsp;W4</p>
+                        </td>
+                        <td rowspan="2" nowrap="nowrap" width="79">
+                          <p align="center">М-200</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 980</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 180</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В15 &nbsp;П4&nbsp;F75&nbsp;W4</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 030</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 230</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В20 &nbsp;П3&nbsp;F100&nbsp;W4</p>
+                        </td>
+                        <td rowspan="2" nowrap="nowrap" width="79">
+                          <p align="center">М-250</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 100</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 300</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В20 &nbsp;П4&nbsp;F100&nbsp;W4</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 150</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 350</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В22,5 П3&nbsp;F150&nbsp;W6</p>
+                        </td>
+                        <td rowspan="2" nowrap="nowrap" width="79">
+                          <p align="center">М-300</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 200</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 400</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В22,5 П4&nbsp;F150&nbsp;W6</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 250</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 450</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В25 П3&nbsp;F200&nbsp;W8</p>
+                        </td>
+                        <td rowspan="2" nowrap="nowrap" width="79">
+                          <p align="center">М-350</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 340</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 540</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В25 П4&nbsp;F200&nbsp;W8</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 400</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 600</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В30 П3&nbsp;F200&nbsp;W10</p>
+                        </td>
+                        <td rowspan="2" nowrap="nowrap" width="79">
+                          <p align="center">М-400</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 500</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 700</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В30 П4&nbsp;F200&nbsp;W10</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 580</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 780</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В35 П3&nbsp;F300&nbsp;W12</p>
+                        </td>
+                        <td rowspan="2" nowrap="nowrap" width="79">
+                          <p align="center">М-450</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 750</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 950</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В35 П4&nbsp;F300&nbsp;W12</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 830</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">7 030</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В40 П3&nbsp;F300&nbsp;W14</p>
+                        </td>
+                        <td rowspan="2" nowrap="nowrap" width="79">
+                          <p align="center">М-550</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 980</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">7 180</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В40 П4&nbsp;F300&nbsp;W14</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 140</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">6 340</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="scroll-element scroll-x scroll-element_arrows_visible">
+                  <div class="scroll-element_corner"></div>
+                  <div class="scroll-arrow scroll-arrow_less"></div>
+                  <div class="scroll-arrow scroll-arrow_more"></div>
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_inner-wrapper">
+                      <div class="scroll-element_inner scroll-element_track">
+                        <div class="scroll-element_inner-bottom"></div>
+                      </div>
+                    </div>
+                    <div class="scroll-bar" style="width: 0px;">
+                      <div class="scroll-bar_body">
+                        <div class="scroll-bar_body-inner"></div>
+                      </div>
+                      <div class="scroll-bar_bottom"></div>
+                      <div class="scroll-bar_center"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="scroll-element scroll-y scroll-element_arrows_visible">
+                  <div class="scroll-element_corner"></div>
+                  <div class="scroll-arrow scroll-arrow_less"></div>
+                  <div class="scroll-arrow scroll-arrow_more"></div>
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_inner-wrapper">
+                      <div class="scroll-element_inner scroll-element_track">
+                        <div class="scroll-element_inner-bottom"></div>
+                      </div>
+                    </div>
+                    <div class="scroll-bar" style="height: 0px;">
+                      <div class="scroll-bar_body">
+                        <div class="scroll-bar_body-inner"></div>
+                      </div>
+                      <div class="scroll-bar_bottom"></div>
+                      <div class="scroll-bar_center"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.table_body --> <br>
+              <div class="scroll-wrapper scrollbar-inner" style="position: relative;">
+                <div class="scrollbar-inner scroll-content"
+                  style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 364.5px;">
+                  <h3>БЕТОН МЕЛКОЗЕРНИСТЫЙ / КЕРАМЗИТОБЕТОН</h3>
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <th valign="top" width="175">
+                          <p align="center">Наименование класса<br> бетона:</p>
+                        </th>
+                        <th valign="top" nowrap="nowrap" width="79">
+                          <p align="center">Марка</p>
+                        </th>
+                        <th valign="top" width="158">
+                          <p align="center">Бетон мелкозернистый (пескобетон/раствор для стяжки)</p>
+                        </th>
+                        <th valign="top" width="156">
+                          <p align="center">Керамзитобетон</p>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В7,5 П3&nbsp;F50&nbsp;W2</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-100</p>
+                        </td>
+                        <td nowrap="nowrap" width="158">
+                          <p align="center">3 950</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 810</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В12,5 П3&nbsp;F75&nbsp;W4</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-150</p>
+                        </td>
+                        <td nowrap="nowrap" width="158">
+                          <p align="center">4 100</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 970</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В15 &nbsp;П3&nbsp;F75&nbsp;W4</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-200</p>
+                        </td>
+                        <td nowrap="nowrap" width="158">
+                          <p align="center">4 300</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 200</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В20 &nbsp;П3&nbsp;F100&nbsp;W6</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-250</p>
+                        </td>
+                        <td nowrap="nowrap" width="158">
+                          <p align="center">4 550</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 360</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В22,5 П3&nbsp;F150&nbsp;W6</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-300</p>
+                        </td>
+                        <td nowrap="nowrap" width="158">
+                          <p align="center">4 850</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 540</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В25 П3&nbsp;F150&nbsp;W8</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-350</p>
+                        </td>
+                        <td nowrap="nowrap" width="158">
+                          <p align="center">5 000</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 670</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>В30 П3&nbsp;F150&nbsp;W8</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-400</p>
+                        </td>
+                        <td nowrap="nowrap" width="158">
+                          <p align="center">5 050</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">-</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="scroll-element scroll-x scroll-element_arrows_visible">
+                  <div class="scroll-element_corner"></div>
+                  <div class="scroll-arrow scroll-arrow_less"></div>
+                  <div class="scroll-arrow scroll-arrow_more"></div>
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_inner-wrapper">
+                      <div class="scroll-element_inner scroll-element_track">
+                        <div class="scroll-element_inner-bottom"></div>
+                      </div>
+                    </div>
+                    <div class="scroll-bar" style="width: 0px;">
+                      <div class="scroll-bar_body">
+                        <div class="scroll-bar_body-inner"></div>
+                      </div>
+                      <div class="scroll-bar_bottom"></div>
+                      <div class="scroll-bar_center"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="scroll-element scroll-y scroll-element_arrows_visible">
+                  <div class="scroll-element_corner"></div>
+                  <div class="scroll-arrow scroll-arrow_less"></div>
+                  <div class="scroll-arrow scroll-arrow_more"></div>
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_inner-wrapper">
+                      <div class="scroll-element_inner scroll-element_track">
+                        <div class="scroll-element_inner-bottom"></div>
+                      </div>
+                    </div>
+                    <div class="scroll-bar" style="height: 0px;">
+                      <div class="scroll-bar_body">
+                        <div class="scroll-bar_body-inner"></div>
+                      </div>
+                      <div class="scroll-bar_bottom"></div>
+                      <div class="scroll-bar_center"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.table_body -->
+            </div>
+            <!-- /.table-box -->
+          </div>
+          <!-- /.table-wrap -->
+
+        </div>
+        <!-- /.tab-pane -->
+        <div id="tab-2" class="tab-pane">
+          <div class="table-wrap">
+            <div class="table-box style-3 style-4  style-alfa" style="width: 100%;">
+              <div class="scroll-wrapper scrollbar-inner" style="position: relative;">
+                <div class="scrollbar-inner scroll-content"
+                  style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                  <h3 id="rastvor">РАСТВОР ДЛЯ КЛАДКИ / СТЯЖКИ</h3>
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <th valign="top" width="175">
+                          <p align="center"><strong>Наименование раствора<br></strong> (погружение конуса):</p>
+                        </th>
+                        <th valign="top" nowrap="nowrap" width="79">
+                          <p align="center"><strong>Марка</strong></p>
+                        </th>
+                        <th valign="top" width="156">
+                          <p align="center"><strong>Раствор для кладки</strong><br> (песок речной сеяный)</p>
+                        </th>
+                        <th valign="top" width="156">
+                          <p align="center"><strong>Раствор для стяжки</strong> <br>(песок крупнозернистый)</p>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>РКЦ М-50 Пк3</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-50</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 000</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">3 700</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>РКЦ М-75 Пк3</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-75</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 150</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">3 850</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>РКЦ М-100 Пк3</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-100</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 250</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">3 950</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>РКЦ М-150 Пк3</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-150</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 400</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 100</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>РКЦ М-200 Пк3</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-200</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 600</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 300</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>РКЦ М-250 Пк3</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-250</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 850</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 550</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td nowrap="nowrap" width="175">
+                          <p>РКЦ М-300 Пк3</p>
+                        </td>
+                        <td nowrap="nowrap" width="79">
+                          <p align="center">М-300</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">5 150</p>
+                        </td>
+                        <td nowrap="nowrap" width="156">
+                          <p align="center">4 850</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="scroll-element scroll-x scroll-element_arrows_visible">
+                  <div class="scroll-element_corner"></div>
+                  <div class="scroll-arrow scroll-arrow_less"></div>
+                  <div class="scroll-arrow scroll-arrow_more"></div>
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_inner-wrapper">
+                      <div class="scroll-element_inner scroll-element_track">
+                        <div class="scroll-element_inner-bottom"></div>
+                      </div>
+                    </div>
+                    <div class="scroll-bar">
+                      <div class="scroll-bar_body">
+                        <div class="scroll-bar_body-inner"></div>
+                      </div>
+                      <div class="scroll-bar_bottom"></div>
+                      <div class="scroll-bar_center"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="scroll-element scroll-y scroll-element_arrows_visible">
+                  <div class="scroll-element_corner"></div>
+                  <div class="scroll-arrow scroll-arrow_less"></div>
+                  <div class="scroll-arrow scroll-arrow_more"></div>
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_inner-wrapper">
+                      <div class="scroll-element_inner scroll-element_track">
+                        <div class="scroll-element_inner-bottom"></div>
+                      </div>
+                    </div>
+                    <div class="scroll-bar">
+                      <div class="scroll-bar_body">
+                        <div class="scroll-bar_body-inner"></div>
+                      </div>
+                      <div class="scroll-bar_bottom"></div>
+                      <div class="scroll-bar_center"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.table-box -->
+          </div>
+          <!-- /.table-wrap -->
+
+        </div>
+        <!-- /.tab-pane -->
+        <div id="tab-3" class="tab-pane">
+          <div class="table-wrap">
+            <div class="table-box style-3 style-4  style-alfa" style="width: 100%;">
+              <div class="scroll-wrapper scrollbar-inner" style="position: relative;">
+                <div class="scrollbar-inner scroll-content"
+                  style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                  <h3>СТОИМОСТЬ ДОСТАВКИ БЕТОНА, РАСТВОРА</h3>
+                  <table class="disple_inline" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <th nowrap="nowrap" width="119">
+                          <p>Расстояние</p>
+                        </th>
+                        <td width="64">
+                          <p align="center">5 км</p>
+                        </td>
+                        <td width="64">
+                          <p align="center">10 км</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">15 км</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">20 км</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">25 км</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">30 км</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">35 км</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">40 км</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">45 км</p>
+                        </td>
+                        <td width="64">
+                          <p align="center">50 км</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th nowrap="nowrap" width="119">
+                          <p>Цена</p>
+                        </th>
+                        <td width="64">
+                          <p align="center">400</p>
+                        </td>
+                        <td width="64">
+                          <p align="center">450</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">500</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">550</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">600</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">700</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">750</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">850</p>
+                        </td>
+                        <td nowrap="nowrap" width="64">
+                          <p align="center">900</p>
+                        </td>
+                        <td width="64">
+                          <p align="center">900</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="scroll-element scroll-x scroll-element_arrows_visible">
+                  <div class="scroll-element_corner"></div>
+                  <div class="scroll-arrow scroll-arrow_less"></div>
+                  <div class="scroll-arrow scroll-arrow_more"></div>
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_inner-wrapper">
+                      <div class="scroll-element_inner scroll-element_track">
+                        <div class="scroll-element_inner-bottom"></div>
+                      </div>
+                    </div>
+                    <div class="scroll-bar">
+                      <div class="scroll-bar_body">
+                        <div class="scroll-bar_body-inner"></div>
+                      </div>
+                      <div class="scroll-bar_bottom"></div>
+                      <div class="scroll-bar_center"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="scroll-element scroll-y scroll-element_arrows_visible">
+                  <div class="scroll-element_corner"></div>
+                  <div class="scroll-arrow scroll-arrow_less"></div>
+                  <div class="scroll-arrow scroll-arrow_more"></div>
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_inner-wrapper">
+                      <div class="scroll-element_inner scroll-element_track">
+                        <div class="scroll-element_inner-bottom"></div>
+                      </div>
+                    </div>
+                    <div class="scroll-bar">
+                      <div class="scroll-bar_body">
+                        <div class="scroll-bar_body-inner"></div>
+                      </div>
+                      <div class="scroll-bar_bottom"></div>
+                      <div class="scroll-bar_center"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.table-box -->
+              <p><sub><span style="vertical-align: sub;">*Время разгрузки: до 5м3 - 30 минут, от 5м3 - 45
+                    минут.</span></sub></p>
+              <p><sub>*Простой свыше указанного времени оплачивается дополнительно из расчета 1500рублей за каждый
+                  полный, либо неполный&nbsp; час.</sub></p>
+            </div>
+            <!-- /.table-box -->
+          </div>
+          <!-- /.table-wrap -->
+
+        </div>
+        <!-- /.tab-pane -->
+      </div>
+
+      <!-- /.tab-content -->
+    </div>
+  </section>
+  
+
+
+
+
+
+  <!-- Контакты -->
+  <div id="contact" class="index-screen-eleven">
+    <form id="form" class="form" action="php/mail.php" method="POST"><span class="title">Остались вопросы?</span> <input
+        type="hidden" name="form_subject" value="Остались вопросы?"> <span class="descr">Заполните форму, наши
+        консультанты ответят на все вопросы</span>
+      <div class="input_wrap"><input type="text" name="User_name" placeholder="Ваше имя"> <input type="tel"
+          name="User_email" im-insert="true" placeholder="Ваша почта">
+        <textarea name="User_question" placeholder="Ваш вопрос"></textarea>
+      </div>
+      <p class="agreement">Нажимая кнопку «Получить предложение» Я соглашаюсь с обработкой персональных данных в
+        соотетствии с <a class='politics' href="#" target="_blank">политикой
+          конфиденциальности</a></p>
+      <button class="submit" name="submit" type="submit">Получить предложение</button>
+
+
+
+      <!-- <div class="notice">Ваша заявка успешно&nbsp;отправлена</div> -->
+    </form>
+  </div>
+  <!-- <form action="#" class="know-form">
+      <h2 class="know-form__title">Хотите&nbsp;узнать больше? Задайте&nbsp;свой&nbsp;вопрос:</h2>
+      <div class="know-form__content">
+        <label class="know-form__field form-field">
+          <span class="form-field__caption">ФИО</span>
+          <input class="form-field__input" type="text" placeholder="Ваше имя">
+        </label>
+        <label class="know-form__field form-field">
+          <span class="form-field__caption">Телефон</span>
+          <input class="form-field__input" type="text" placeholder="Ваш номер телефона">
+        </label>
+        <label class="know-form__field form-field form-field__input--big">
+          <span class="form-field__caption">Вопрос</span>
+          <input class="form-field__input" type="text" placeholder="Ваш вопрос">
+        </label>
+        <button class="btn-reset know-form__btn btn btn--fill" type="submit">Send</button>
+      </div>
+    </form> -->
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-fb-wrap">
+        <div class="nav-box company">
+          <span class="title">Компания</span>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#price">Цены</a></li>
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#work">Работа</a></li>
+            <li><a href="#contact">Наши контакты</a></li>
+          </ul>
+        </div>
+
+
+
+        <div class="address-box">
+          <span class="title">Адрес</span>
+          <p class="address">Московская область, г.о. Истра, п. Северный, ул. Шоссейная, д. 18Б</p>
+          <a href="mailto:manager@garant-beton.ru" class="email">manager@garant-beton.ru</a>
+          <div class="social">
+            <a target="blank" href="https://instagram.com/russian_beton?utm_medium=copy_link" class="tw"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1);">
+                <path
+                  d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z">
+                </path>
+                <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                <path
+                  d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z">
+                </path>
+              </svg></a>
+            <!--<a href="#" class="ok"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.008 512.008"><path d="M256.002 0c-70.592 0-128 57.408-128 128s57.408 128 128 128 128-57.408 128-128-57.408-128-128-128zm0 192c-35.296 0-64-28.704-64-64s28.704-64 64-64 64 28.704 64 64-28.704 64-64 64z"/><path d="M425.73 252.448c-12.512-12.512-32.736-12.512-45.248 0-68.608 68.608-180.288 68.608-248.928 0-12.512-12.512-32.736-12.512-45.248 0s-12.512 32.736 0 45.28c39.808 39.808 90.272 62.496 142.304 68.416l-91.232 91.232c-12.512 12.512-12.512 32.736 0 45.248s32.736 12.512 45.248 0l73.376-73.376 73.376 73.376A31.912 31.912 0 0 0 352.002 512a31.912 31.912 0 0 0 22.624-9.376c12.512-12.512 12.512-32.736 0-45.248l-91.232-91.232c52.032-5.92 102.496-28.608 142.304-68.416 12.512-12.512 12.512-32.768.032-45.28z"/></svg></a>-->
+            <a target="blank" href="https://vk.com/club141099395" class="vk"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 304.36 304.36">
+                <path
+                  d="M261.945 175.576c10.096 9.857 20.752 19.131 29.807 29.982 4 4.822 7.787 9.798 10.684 15.394 4.105 7.955.387 16.709-6.746 17.184l-44.34-.02c-11.436.949-20.559-3.655-28.23-11.474-6.139-6.253-11.824-12.908-17.727-19.372-2.42-2.642-4.953-5.128-7.979-7.093-6.053-3.929-11.307-2.726-14.766 3.587-3.523 6.421-4.322 13.531-4.668 20.687-.475 10.441-3.631 13.186-14.119 13.664-22.414 1.057-43.686-2.334-63.447-13.641-17.422-9.968-30.932-24.04-42.691-39.971-22.895-31.021-40.428-65.108-56.186-100.15C-2.01 76.458.584 72.22 9.295 72.07c14.465-.281 28.928-.261 43.41-.02 5.879.086 9.771 3.458 12.041 9.012 7.826 19.243 17.402 37.551 29.422 54.521 3.201 4.518 6.465 9.036 11.113 12.216 5.142 3.521 9.057 2.354 11.476-3.374 1.535-3.632 2.207-7.544 2.553-11.434 1.146-13.383 1.297-26.743-.713-40.079-1.234-8.323-5.922-13.711-14.227-15.286-4.238-.803-3.607-2.38-1.555-4.799 3.564-4.172 6.916-6.769 13.598-6.769h50.111c7.889 1.557 9.641 5.101 10.721 13.039l.043 55.663c-.086 3.073 1.535 12.192 7.07 14.226 4.43 1.448 7.35-2.096 10.008-4.905 11.998-12.734 20.561-27.783 28.211-43.366 3.395-6.852 6.314-13.968 9.143-21.078 2.096-5.276 5.385-7.872 11.328-7.757l48.229.043c1.43 0 2.877.021 4.262.258 8.127 1.385 10.354 4.881 7.844 12.817-3.955 12.451-11.65 22.827-19.174 33.251-8.043 11.129-16.645 21.877-24.621 33.072-7.328 10.223-6.746 15.376 2.357 24.255zm0 0"
+                  fill-rule="evenodd" clip-rule="evenodd"></path>
+              </svg></a>
+            <a target="blank" href="https://www.facebook.com/niledelin/" class="fb"><svg aria-hidden="true"
+                data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 264 512" class="svg-inline--fa fa-facebook-f fa-w-9 fa-3x">
+                <path
+                  d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229">
+                </path>
+              </svg></a>
+
+          </div>
+        </div><!-- /.address-box -->
+        <div class="contacts-box">
+          <div class="phones">
+            <a href="tel:84994089818">8 (499) 408 98 18</a>
+            <a href="tel:88005006826">8 (800) 500 68 26</a>
+            <a href="tel:89637624984">8 (963) 762 49 84</a>
+          </div>
+          <a href="mailto:manager@garant-beton.ru" class="callback" data-toggle="modal"
+            data-target="#callback-modal">Оставить заявку</a>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <div class="bottom-box">
+      <div class="container">
+        <div class="bottom-fb-wrap">
+          <p class="copyright">
+            2010-2022 Гарант-Бетон - гарантия качества вашего дома!
+          </p>
+          <div class="links">
+            <a href="#">Политика конфиденциальности</a>
+
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </div><!-- /.copyright-box -->
+  </footer>
+  <!-- /.container -->
+  </div>
+
+
+
+
+
+
+
+  </div> <!--  site-container -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
